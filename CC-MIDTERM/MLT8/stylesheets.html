@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Introduction Layout</title>
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#e5e5e5;
+    margin:0;
+}
+
+.container{
+    width:900px;
+    margin:30px auto;
+    background:#ffffff;
+    padding:20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.header{
+    background:#722ce2;
+    color:white;
+    padding:20px;
+    border-radius:5px;
+}
+
+.header h1{
+    margin:0;
+}
+
+.header p{
+    margin:5px 0 0 0;
+    font-size:14px;
+}
+
+.content{
+    display:flex;
+    margin-top:20px;
+}
+
+
+.menu{
+    width:100px;
+    
+}
+
+.menu button{
+    width:100%;
+    padding:10px;
+    margin-bottom:5px;
+    border:1px solid #ccc;
+    background:#f4f4f4;
+    cursor:pointer;
+    text-align:left;
+}
+
+.menu button:first-child{
+    background:#0c0c0c;
+    color:white;
+    font-weight:200pxpx;
+}
+
+.main{
+    flex:1;
+    padding:0 30px;
+}
+
+.main h2{
+    margin-top:10;
+}
+
+.main a{
+    color:#3e89df;
+    text-decoration:none;
+}
+
+.main a:hover{
+    text-decoration:underline;
+}
+
+.sidebar{
+    width:220px;
+    background:#302e38;
+    color:white;
+    padding:15px;
+    border-radius:5px;
+}
+
+.footer{
+    margin-top:20px;
+    background:#722ce2;
+    padding:15px;
+    font-size:13px;
+    border-radius:5px;
+    color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Welcome to My Homepage</h1>
+        <p>Use the menu to select different Stylesheets</p>
+    </div>
+
+    <div class="content">
+
+        <div class="menu">
+            <button>Stylesheet 1</button>
+            <button>Stylesheet 2</button>
+            <button>Stylesheet 3</button>
+            <button>Stylesheet 4</button>
+            <button>No Stylesheet</button>
+            
+        </div>
+
+        <div class="main">
+            <h2>Same Page Different Stylesheets</h2>
+            <p>
+                This is a demonstration of how different stylesheets can change 
+                the layout of your HTML page. You can change the layout of this page 
+                by selecting different stylesheets in the menu, or by selecting 
+                one of the following links:
+                <br><br>
+                <a href="#">Stylesheet1</a>,
+                <a href="#">Stylesheet2</a>,
+                <a href="#">Stylesheet3</a>,
+                <a href="#">Stylesheet4</a>,
+                <a href="#">Stylesheet5</a>,
+                <a href="#">Stylesheet6</a>,
+                <a href="#">Stylesheet7</a>,
+                <a href="#">Stylesheet8</a>,
+                <a href="#">Stylesheet9</a>,
+            </p>
+
+            <h3>No Styles</h3>
+            <p>
+                This page uses DIV elements to group different sections of the HTML page.
+                Click here to see how the page looks like with no stylesheet:
+                <a href="#">No Stylesheet</a>.
+            </p>
+        </div>
+
+        <div class="sidebar">
+            <h3>Side-Bar</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi aperiam quam amet vel iusto pariatur sequi iste sapiente officiis ut, ipsum cum sunt necessitatibus ad, error omnis consequuntur culpa consequatur?</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ipsum repellendus neque enim, fugiat odit sed asperiores. Minus perspiciatis, quas dolore iure nulla saepe esse quod, fugiat, amet quos natus!</p>
+    </div>
+
+</div>
+
+</body>
+</html>

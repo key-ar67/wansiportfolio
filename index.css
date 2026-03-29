@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header a[href^="mailto:"] {
+    color: #ffffff; /* normal email color */
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.1s ease;
+}
+
+header a[href^="mailto:"]:hover {
+    color: #0d1a66; /* dark blue on hover */
+}
+
+header a[href^="mailto:"]:active {
+    color: #ffcc00; /* color when clicked */
+    transform: scale(0.95); /* slight shrink effect on click */
+}
+
+
+header.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 10px;
+}
+h1, h2, h3, h4 {
+    color: #7482ce; 
+}
+
+.project, .project2, .project a {
+    color: #ffffff;
+}
+.project a, .project2 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1, h2, h4 {
+    margin-bottom: 10px;
+}
+
+.card {
+    background: rgba(12, 51, 134, 0.356);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.project {
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project2 {
+    background: rgba(255,255,255,0.1);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.project-list2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.socials a img {
+    width: 80px;
+    margin: 5px;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.socials a img:hover {
+    transform: scale(1.1);
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 25% 25%, rgba(255,255,255,0.05), transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(255,255,255,0.05), transparent 50%);
+    animation: rotateBG 20s linear infinite;
+}
+
+@keyframes rotateBG {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

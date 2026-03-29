@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lab Task 6</title>
+
+<style>
+.container{
+    width:700px;
+    margin:auto;
+    font-family: Arial;
+}
+.blockInput{
+    display:block;
+    margin-bottom:8px;
+    padding:6px;
+    width:200px;
+}
+.inlineBox{
+    display:inline-block;
+    vertical-align:middle;
+}
+.inline-section p{
+    display: inline-block;
+    width: 400px;
+    vertical-align: middle;
+}
+.inline-section button{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 8px 15px;
+    margin-left: 5px;
+}
+button{
+    padding:5px 10px;
+    margin-left:5px;
+}
+.googleBox{
+    margin-top:20px;
+    text-align:center;
+}
+.search{
+    width:350px;
+    padding:8px;
+    border-radius:20px;
+    border:1px solid gray;
+}
+.signup{
+    margin-top:30px;
+    width:250px;
+    padding:12px;
+    border:1px solid black;
+}
+.signup input{
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 20px;
+
+}
+.signup .name{
+    display: inline-block;
+    width: 48%;
+    box-sizing: border-box;
+}
+.signup .name:last-child{
+    float: right;
+}
+.signup .email{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.signup button{
+    width:240px;
+    background:blue;
+    color:white;
+    border:none;
+    padding:10px;
+}
+.signup button:hover{
+    opacity: 0.8;
+}
+.uber{
+    margin-top:30px;
+    width:300px;
+    padding:15px;
+    border:1px solid black;
+}
+.uber input{
+    display:block;
+    width:260px;
+    margin-bottom:10px;
+    padding:10px;
+}
+.blackBtn{
+    background:black;
+    color:white;
+    border:none;
+    padding:10px;
+}
+.grayBtn{
+    background:lightgray;
+    border:none;
+    padding:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h3>1. Block Display</h3>
+<input type="text" placeholder="Name" class="blockInput">
+<input type="text" placeholder="Email" class="blockInput">
+
+<h3>2. Inline-Block Example</h3>
+    <div class="inline-section">
+        <p>Thanks for chatting with our customer support. Would you like to take our quick survey?</p>
+        <button>Yes</button>
+        <button>No</button>
+    </div>
+<h3>3. Google Search Form</h3>
+
+<div class="googleBox">
+<img src="goglingg.jpg" width="200">
+<br><br>
+
+<input type="text" class="search"
+placeholder="Search Google or type a URL">
+
+</div>
+<h3>4. Sign Up Form</h3>
+<div class="signup">
+
+<input type="text" placeholder="First name">
+<input type="text" placeholder="Last name">
+<input type="text" placeholder="Email">
+<button>Sign Up</button>
+
+</div>
+
+<div class="uber">
+
+<h2>Request a ride now</h2>
+
+<input type="text" placeholder="Enter pickup location">
+<input type="text" placeholder="Enter destination">
+<button class="blackBtn">Request now</button>
+<button class="grayBtn">Schedule for later</button>
+
+</div>
+
+
+</div>
+
+</body>
+</html>
