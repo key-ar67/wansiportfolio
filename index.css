@@ -13,18 +13,18 @@ body {
 }
 
 header a[href^="mailto:"] {
-    color: #ffffff; /* normal email color */
+    color: #ffffff; 
     text-decoration: none;
     transition: color 0.2s ease, transform 0.1s ease;
 }
 
 header a[href^="mailto:"]:hover {
-    color: #0d1a66; /* dark blue on hover */
+    color: #0d1a66;
 }
 
 header a[href^="mailto:"]:active {
-    color: #ffcc00; /* color when clicked */
-    transform: scale(0.95); /* slight shrink effect on click */
+    color: #ffcc00; 
+    transform: scale(0.95); 
 }
 
 
